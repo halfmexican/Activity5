@@ -1,20 +1,25 @@
-
+/* Root styles */
 :root {
   background-color: #333333;
   align-self: center;
 }
 
+/* Board layout styles */
 .board-row:after {
   clear: both;
   content: "";
   display: table;
 }
+
+/* Game status text */
 .status {
   margin-bottom: 10px;
   color: #ffffff; 
 }
+
+/* Square button styles */
 .square {
-  background: #1a1a1a; /* Dark gray background */
+  background: #1a1a1a;
   border: 1px solid #050505;
   float: left;
   font-size: 24px;
@@ -29,16 +34,21 @@
   margin: 0px;
 }
 
+/* List marker color */
 li::marker {
   color: #ffffff;
 }
 
+/* Square focus states */
 .square:focus {
   outline: none;
 }
+
 .kbd-navigation .square:focus {
   background: #ddd;
 }
+
+/* Game container layout */
 .game {
   display: flex;
   flex-direction: row;
@@ -48,11 +58,13 @@ li::marker {
   min-height: 100vh;
 }
 
+/* Heading styles */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* Button styles */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -67,16 +79,19 @@ button {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+/* Button hover state */
 button:hover {
   border-color: #646cff;
 }
 
-
+/* Button focus states */
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Light theme styles */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
